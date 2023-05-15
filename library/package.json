@@ -1,12 +1,9 @@
 {
-  "name": "library",
-  "version": "1.0.6",
+  "name": "@iannacus/i-ui",
+  "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Ian Rosas",
+  "peerDependencies": {
+    "styled-components": "^6.0.0-rc.1"
+  }
 }
