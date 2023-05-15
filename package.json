@@ -1,5 +1,5 @@
 {
-  "name": "iannacus-ui",
+  "name": "iandevluccus-ui",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -72,6 +72,5 @@
     "storybook": "^7.0.11",
     "webpack": "^5.82.1",
     "rimraf": "^3.0.2"
-  },
-  "repository": "https://github.com/Iannacus/iannacus-ui"
+  }
 }
