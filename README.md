@@ -15,3 +15,7 @@ This UI is just born.
 I'm working so hard to finish more components. I'll writing updates here.
 
 At the moment just have button component and text input component.
+
+## `Update`
+
+A flex Container was added.

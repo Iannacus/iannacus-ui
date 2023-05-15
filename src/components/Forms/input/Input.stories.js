@@ -1,7 +1,7 @@
 import TextInput from "./TextInput";
 
 export default {
-  title: "Input",
+  title: "Forms/Input",
   component: TextInput,
   tags: ["autodocs"],
   argTypes: {
