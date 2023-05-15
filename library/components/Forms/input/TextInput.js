@@ -1,3 +1,4 @@
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../../theme/colors";
@@ -76,23 +77,25 @@ const InputBox = styled.div`
 const TextInput = ({
   placeholder,
   variant,
-  color
+  color,
+  type,
+  ...rest
 }) => {
   const inputDictionary = {
     outlined: /*#__PURE__*/React.createElement(React.Fragment, null),
     filled: /*#__PURE__*/React.createElement(InputBox, {
       filled: true,
       color: color || "magenta"
-    }, /*#__PURE__*/React.createElement(Input, {
+    }, /*#__PURE__*/React.createElement(Input, _extends({
       required: "required",
-      type: "text"
-    }), /*#__PURE__*/React.createElement(Label, null, placeholder), /*#__PURE__*/React.createElement("i", null)),
+      type: type || "text"
+    }, rest)), /*#__PURE__*/React.createElement(Label, null, placeholder), /*#__PURE__*/React.createElement("i", null)),
     standard: /*#__PURE__*/React.createElement(InputBox, {
       color: color
-    }, /*#__PURE__*/React.createElement(Input, {
+    }, /*#__PURE__*/React.createElement(Input, _extends({
       required: "required",
-      type: "password"
-    }), /*#__PURE__*/React.createElement(Label, null, placeholder), /*#__PURE__*/React.createElement("i", null))
+      type: type || "text"
+    }, rest)), /*#__PURE__*/React.createElement(Label, null, placeholder), /*#__PURE__*/React.createElement("i", null))
   };
   return /*#__PURE__*/React.createElement(React.Fragment, null, variant ? inputDictionary[variant] : inputDictionary.standard);
 };
