@@ -1,18 +1,18 @@
 export const sizes = {
   label: {
-    size: "8px",
+    size: "10px",
     weight: "400",
   },
   h1: {
-    size: "28px",
+    size: "32px",
     weight: "700",
   },
   h2: {
-    size: "24px",
+    size: "28px",
     weight: "700",
   },
   h3: {
-    size: "22px",
+    size: "25px",
     weight: "700",
   },
   paragraph: {
@@ -20,11 +20,11 @@ export const sizes = {
     weight: "400",
   },
   title: {
-    size: "18px",
+    size: "22px",
     weight: "700",
   },
   subtitle: {
-    size: "16px",
+    size: "18px",
     weight: "700",
   },
   caption: {

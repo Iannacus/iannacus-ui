@@ -4,6 +4,7 @@ import { colors } from "../../theme/colors";
 import { input } from "../../theme/input";
 
 const BaseButton = styled.button`
+  font-weight: 700;
   transition: 0.5s;
   background: white;
   width: ${(props) => (props.fullwidth ? "100%" : "fit-content")};
@@ -24,6 +25,8 @@ const BaseButton = styled.button`
       props.color
         ? `0px 0px 10px 1px ${colors[props.color].shadow}`
         : "0px 0px 10px 1px rgba(255, 255, 255, 0.6)"};
+  }
+  & span {
   }
 `;
 const OutlinedButton = styled(BaseButton)`
@@ -56,6 +59,7 @@ const TextButton = styled(BaseButton)`
 `;
 
 const RainbowButton = styled.button`
+  font-weight: 700;
   width: ${(props) => (props.fullwidth ? "100%" : "fit-content")};
   position: relative;
   padding: ${(props) => (props.size ? `${input[props.size]}` : "5px 10px")};

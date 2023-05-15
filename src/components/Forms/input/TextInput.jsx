@@ -79,19 +79,19 @@ const InputBox = styled.div`
   }
 `;
 
-const TextInput = ({ placeholder, variant, color }) => {
+const TextInput = ({ placeholder, variant, color, type, ...rest }) => {
   const inputDictionary = {
     outlined: <></>,
     filled: (
       <InputBox filled color={color || "magenta"}>
-        <Input required="required" type="text" />
+        <Input required="required" type={type || "text"} {...rest} />
         <Label>{placeholder}</Label>
         <i />
       </InputBox>
     ),
     standard: (
       <InputBox color={color}>
-        <Input required="required" type="password" />
+        <Input required="required" type={type || "text"} {...rest} />
         <Label>{placeholder}</Label>
         <i />
       </InputBox>
