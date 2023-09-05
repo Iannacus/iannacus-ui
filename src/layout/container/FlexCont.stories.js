@@ -8,7 +8,7 @@ export default {
   argTypes: {
     direction: {
       name: "direction",
-      description: "Se toma un valor de las direcciones flex",
+      description: "Se toma un valor de las direcciones flexs",
       control: "select",
       options: ["row", "row-reverse", "column", "column-reverse"],
     },
